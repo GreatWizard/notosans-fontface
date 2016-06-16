@@ -1,6 +1,6 @@
 {
   "name": "notosans-fontface",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple package providing the Noto Sans fontface.",
   "main": "css/notosans-fontface.css",
   "scripts": {
