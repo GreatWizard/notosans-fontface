@@ -1,0 +1,29 @@
+{
+  "name": "notosans-fontface",
+  "version": "0.0.0",
+  "description": "A simple package providing the Noto Sans fontface.",
+  "main": "css/notosans-fontface.css",
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreatWizard/notosans-fontface.git"
+  },
+  "author": "Guillaume Gérard <guillaume.gerard88@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GreatWizard/notosans-fontface/issues"
+  },
+  "homepage": "https://github.com/GreatWizard/notosans-fontface",
+  "keywords": [
+    "noto sans",
+    "notosans",
+    "font",
+    "fontface"
+  ],
+  "devDependencies": {
+    "less": "^2.7.1",
+    "node-sass": "^3.7.0"
+  }
+}

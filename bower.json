@@ -1,0 +1,46 @@
+{
+  "name": "notosans-fontface",
+  "version": "0.0.0",
+  "description": "A simple package providing the Noto Sans fontface.",
+  "homepage": "https://github.com/GreatWizard/notosans-fontface",
+  "authors": [
+    "Guillaume Gérard <guillaume.gerard88@gmail.com>"
+  ],
+  "main": [
+    "./css/notosans-fontface.css",
+    "./fonts/NotoSans-Bold.eot",
+    "./fonts/NotoSans-Bold.svg",
+    "./fonts/NotoSans-Bold.ttf",
+    "./fonts/NotoSans-Bold.woff",
+    "./fonts/NotoSans-Bold.woff2",
+    "./fonts/NotoSans-BoldItalic.eot",
+    "./fonts/NotoSans-BoldItalic.svg",
+    "./fonts/NotoSans-BoldItalic.ttf",
+    "./fonts/NotoSans-BoldItalic.woff",
+    "./fonts/NotoSans-BoldItalic.woff2",
+    "./fonts/NotoSans-Regular.eot",
+    "./fonts/NotoSans-Regular.svg",
+    "./fonts/NotoSans-Regular.ttf",
+    "./fonts/NotoSans-Regular.woff",
+    "./fonts/NotoSans-Regular.woff2",
+    "./fonts/NotoSans-RegularItalic.eot",
+    "./fonts/NotoSans-RegularItalic.svg",
+    "./fonts/NotoSans-RegularItalic.ttf",
+    "./fonts/NotoSans-RegularItalic.woff",
+    "./fonts/NotoSans-RegularItalic.woff2"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "noto sans",
+    "notosans",
+    "font",
+    "fontface"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
