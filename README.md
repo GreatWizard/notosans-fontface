@@ -1,5 +1,7 @@
 # Noto Sans fontface
 
+[![Build Status](https://travis-ci.org/GreatWizard/notosans-fontface.svg?branch=master)](https://travis-ci.org/GreatWizard/notosans-fontface)
+
 A simple package providing the [Noto Sans](http://www.google.com/fonts/specimen/Noto+Sans) fontface.
 
 ## Install
