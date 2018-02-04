@@ -24,6 +24,6 @@
   ],
   "devDependencies": {
     "less": "^2.7.1",
-    "node-sass": "^3.7.0"
+    "node-sass": "^4.7.2"
   }
 }

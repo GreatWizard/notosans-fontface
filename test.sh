@@ -7,4 +7,3 @@ echo "Test: Compile less"
 
 echo "Test: Compile scss"
 ./node_modules/.bin/node-sass "$DIR/scss/notosans-fontface.scss" >/dev/null
-
