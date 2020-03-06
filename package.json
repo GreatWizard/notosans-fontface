@@ -4,7 +4,7 @@
   "description": "A simple package providing the Noto Sans fontface.",
   "main": "css/notosans-fontface.css",
   "scripts": {
-    "test": "./test.sh"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,11 @@
     "fontface"
   ],
   "devDependencies": {
-    "less": "^2.7.1",
-    "node-sass": "^4.7.2"
+    "less": "^3.11.1",
+    "node-sass": "^4.13.1",
+    "ttf2eot": "^2.0.0",
+    "ttf2svg": "^1.2.0",
+    "ttf2woff": "^2.0.1",
+    "ttf2woff2": "^3.0.0"
   }
 }

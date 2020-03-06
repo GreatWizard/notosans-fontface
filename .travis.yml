@@ -1,8 +1,10 @@
 ---
 language: node_js
 node_js:
-  - "4"
   - "6"
+  - "8"
+  - "10"
+  - "12"
   - "stable"
 
 sudo: false
@@ -12,7 +14,7 @@ cache:
     - node_modules
 
 install:
-  - npm install
+  - yarn install
 
 script:
-  - npm test
+  - make test
