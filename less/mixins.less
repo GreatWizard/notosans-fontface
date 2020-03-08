@@ -1,18 +1,20 @@
+.fontface(@font-name, @fontface-path, @fontface-prefix, @type, @weight, @style) {
+  @font-face {
+    font-family: @font-name;
+    src: url('@{fontface-path}/@{fontface-prefix}@{type}.eot');
+    src: local('@{font-name} @{type}'),
+         url('@{fontface-path}/@{fontface-prefix}@{type}.eot?#iefix') format('embedded-opentype'),
+         url('@{fontface-path}/@{fontface-prefix}@{type}.woff2') format('woff2'),
+         url('@{fontface-path}/@{fontface-prefix}@{type}.woff') format('woff'),
+         url('@{fontface-path}/@{fontface-prefix}-@{type}.ttf') format('truetype'),
+         url('@{fontface-path}/@{fontface-prefix}@{type}.svg#@{fontface-prefix}@{type}') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
 @notosans-fontface-path: '../fonts';
 
 .notosans-fontface(@type, @weight, @style) {
-    @font-face {
-        font-family: 'Noto Sans';
-        src: url('@{notosans-fontface-path}/NotoSans-@{type}.eot');
-        src: local('Noto Sans @{type}'),
-             local('NotoSans-@{type}'),
-             url('@{notosans-fontface-path}/NotoSans-@{type}.eot?#iefix') format('embedded-opentype'),
-             url('@{notosans-fontface-path}/NotoSans-@{type}.woff2') format('woff2'),
-             url('@{notosans-fontface-path}/NotoSans-@{type}.woff') format('woff'),
-             url('@{notosans-fontface-path}/NotoSans-@{type}.ttf') format('truetype'),
-             url('@{notosans-fontface-path}/NotoSans-@{type}.svg#NotoSans-@{type}') format('svg');
-        font-weight: @weight;
-        font-style: @style;
-    }
+  .fontface("Noto Sans", @notosans-fontface-path, "NotoSans-", @type, @weight, @style)
 }
-

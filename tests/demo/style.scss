@@ -1,0 +1,59 @@
+// Configure where are my fonts
+$notosans-fontface-path: "../../fonts";
+// Import all weight fonts
+@import "../../scss/notosans-fontface-allweight";
+
+.thin {
+  font-family: "Noto Sans Thin";
+}
+.thinitalic {
+  font-family: "Noto Sans ThinItalic";
+}
+.extralight {
+  font-family: "Noto Sans ExtraLight";
+}
+.extralightitalic {
+  font-family: "Noto Sans ExtraLightItalic";
+}
+.light {
+  font-family: "Noto Sans Light";
+}
+.lightitalic {
+  font-family: "Noto Sans LightItalic";
+}
+.regular {
+  font-family: "Noto Sans Regular";
+}
+.italic {
+  font-family: "Noto Sans Italic";
+}
+.medium {
+  font-family: "Noto Sans Medium";
+}
+.mediumitalic {
+  font-family: "Noto Sans MediumItalic";
+}
+.semibold {
+  font-family: "Noto Sans SemiBold";
+}
+.semibolditalic {
+  font-family: "Noto Sans SemiBoldItalic";
+}
+.bold {
+  font-family: "Noto Sans Bold";
+}
+.bolditalic {
+  font-family: "Noto Sans BoldItalic";
+}
+.extrabold {
+  font-family: "Noto Sans ExtraBold";
+}
+.extrabolditalic {
+  font-family: "Noto Sans ExtraBoldItalic";
+}
+.black {
+  font-family: "Noto Sans Black";
+}
+.blackitalic {
+  font-family: "Noto Sans BlackItalic";
+}
