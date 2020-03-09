@@ -138,8 +138,8 @@ About the `notosans-fontface` mixin, you can redefine the `notosans-fontface-pat
 .notosans-fontface("Bold", 700, normal);
 .notosans-fontface("BoldItalic", 700, italic);
 
-.fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp-", "Regular", 400, normal);
-.fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp-", "Bold", 700, normal);
+.fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Regular", 400, normal);
+.fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Bold", 700, normal);
 
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
@@ -159,8 +159,8 @@ $notosans-fontface-path: "fonts/Noto/";
 @include notosans-fontface("Bold", 700, normal);
 @include notosans-fontface("BoldItalic", 700, italic);
 
-@include fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp-", "Regular", 400, normal);
-@include fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp-", "Bold", 700, normal);
+@include fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Regular", 400, normal);
+@include fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Bold", 700, normal);
 
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
