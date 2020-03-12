@@ -1,7 +1,7 @@
 @mixin fontface($font-name, $fontface-path, $fontface-prefix, $type, $weight, $style) {
   @font-face {
     font-family: $font-name;
-    src: url('#{$fontface-path}/#{$fontface-prefix}#{$type}.eot');
+    src: url('#{$fontface-path}/#{$fontface-prefix}-#{$type}.eot');
     src: local('#{$font-name} #{$type}'),
          local('#{$fontface-prefix}-#{$type}'),
          url('#{$fontface-path}/#{$fontface-prefix}-#{$type}.eot?#iefix') format('embedded-opentype'),
