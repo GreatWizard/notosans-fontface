@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.com/GreatWizard/notosans-fontface.svg?branch=master)](https://travis-ci.com/GreatWizard/notosans-fontface)
 [![License: Apache 2.0](https://img.shields.io/github/license/GreatWizard/notosans-fontface)](https://github.com/GreatWizard/notosans-fontface/blob/master/LICENSE.txt)
 [![Liberapay](http://img.shields.io/liberapay/patrons/GreatWizard.svg?logo=liberapay)](https://liberapay.com/GreatWizard/)
-[![Beerpay](https://beerpay.io/GreatWizard/notosans-fontface/badge.svg?style=flat)](https://beerpay.io/GreatWizard/notosans-fontface)
 
 A simple package providing the [Noto Sans](https://www.google.com/get/noto/) font face.
 
@@ -159,8 +158,22 @@ $notosans-fontface-path: "fonts/Noto/";
 @include notosans-fontface("Bold", 700, normal);
 @include notosans-fontface("BoldItalic", 700, italic);
 
-@include fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Regular", 400, normal);
-@include fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Bold", 700, normal);
+@include fontface(
+  "Noto Sans CJK JP",
+  "fonts/JP/",
+  "NotoSansCJKjp",
+  "Regular",
+  400,
+  normal
+);
+@include fontface(
+  "Noto Sans CJK JP",
+  "fonts/JP/",
+  "NotoSansCJKjp",
+  "Bold",
+  700,
+  normal
+);
 
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
