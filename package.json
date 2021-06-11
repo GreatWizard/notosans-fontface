@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/GreatWizard/notosans-fontface.git"
   },
-  "author": "Guillaume Gérard <guillaume.gerard88@gmail.com>",
+  "author": {
+    "name": "Guillaume Gérard",
+    "url": "https://guillaume.sh"
+  },
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/GreatWizard/notosans-fontface/issues"
