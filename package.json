@@ -2,8 +2,8 @@
   "name": "notosans-fontface",
   "version": "1.2.3",
   "description": "A simple package providing the Noto Sans fontface.",
-  "main": "css/notosans-fontface.css",
   "scripts": {
+    "start": "parcel demo/index.html",
     "test": "make test"
   },
   "repository": {
@@ -20,17 +20,19 @@
   },
   "homepage": "https://github.com/GreatWizard/notosans-fontface",
   "keywords": [
-    "noto sans",
+    "noto",
+    "sans",
     "notosans",
     "font",
     "fontface"
   ],
   "devDependencies": {
-    "less": "^3.11.1",
-    "node-sass": "^4.13.1",
-    "ttf2eot": "^2.0.0",
+    "less": "^4.1.2",
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.1",
+    "ttf2eot": "^3.0.0",
     "ttf2svg": "^1.2.0",
-    "ttf2woff": "^2.0.1",
-    "ttf2woff2": "^3.0.0"
+    "ttf2woff": "^3.0.0",
+    "wawoff2": "^2.0.0"
   }
 }

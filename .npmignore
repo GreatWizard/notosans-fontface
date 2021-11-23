@@ -1,0 +1,7 @@
+/.github
+/.parcel-cache
+/demo
+/dist
+/tests
+/tmp
+bower.json
