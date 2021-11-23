@@ -1,6 +1,6 @@
 # Noto Sans Font Face
 
-[![Build Status](https://github.com/GreatWizard/notosans-fontface/workflows/ci.yml/badge.svg)](https://github.com/GreatWizard/notosans-fontface/actions)
+[![Build Status](https://github.com/GreatWizard/notosans-fontface/workflows/CI/badge.svg)](https://github.com/GreatWizard/notosans-fontface/actions)
 [![License: Apache 2.0](https://img.shields.io/github/license/GreatWizard/notosans-fontface)](https://github.com/GreatWizard/notosans-fontface/blob/master/LICENSE.txt)
 [![Liberapay](http://img.shields.io/liberapay/patrons/GreatWizard.svg?logo=liberapay)](https://liberapay.com/GreatWizard/)
 
