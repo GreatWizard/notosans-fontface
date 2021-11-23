@@ -27,6 +27,10 @@ build:
 	./node_modules/.bin/node-sass ./scss/notosans-fontface-allweight.scss --output-style compressed > ./css/notosans-fontface-allweight.min.css
 	./node_modules/.bin/node-sass ./scss/notosans-fontface.scss --output-style compressed > ./css/notosans-fontface.min.css
 
+## Convert ttf files into woff2, woff, eot and svg
+convert:
+	./convert.sh
+
 ## Install yarn packages
 install:
 	yarn install --non-interactive --prefer-offline
