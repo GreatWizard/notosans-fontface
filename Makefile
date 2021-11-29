@@ -24,8 +24,12 @@ help:
 build:
 	./node_modules/.bin/node-sass ./scss/notosans-fontface-allweight.scss --output-style expanded > ./css/notosans-fontface-allweight.css
 	./node_modules/.bin/node-sass ./scss/notosans-fontface.scss --output-style expanded > ./css/notosans-fontface.css
+	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern-allweight.scss --output-style expanded > ./css/notosans-fontface-modern-allweight.css
+	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern.scss --output-style expanded > ./css/notosans-fontface-modern.css
 	./node_modules/.bin/node-sass ./scss/notosans-fontface-allweight.scss --output-style compressed > ./css/notosans-fontface-allweight.min.css
 	./node_modules/.bin/node-sass ./scss/notosans-fontface.scss --output-style compressed > ./css/notosans-fontface.min.css
+	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern-allweight.scss --output-style compressed > ./css/notosans-fontface-modern-allweight.min.css
+	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern.scss --output-style compressed > ./css/notosans-fontface-modern.min.css
 
 ## Convert ttf files into woff2, woff, eot and svg
 convert:
@@ -47,6 +51,12 @@ test-less:
 	./node_modules/.bin/lessc ./less/notosans-fontface.less > ./tmp/less/notosans-fontface.css
 	diff tests/outputs/less/notosans-fontface.css tmp/less/notosans-fontface.css
 
+	./node_modules/.bin/lessc ./less/notosans-fontface-modern-allweight.less > ./tmp/less/notosans-fontface-modern-allweight.css
+	diff tests/outputs/less/notosans-fontface-modern-allweight.css tmp/less/notosans-fontface-modern-allweight.css
+
+	./node_modules/.bin/lessc ./less/notosans-fontface-modern.less > ./tmp/less/notosans-fontface-modern.css
+	diff tests/outputs/less/notosans-fontface-modern.css tmp/less/notosans-fontface-modern.css
+
 test-scss:
 	mkdir -p tmp/scss
 
@@ -55,3 +65,9 @@ test-scss:
 
 	./node_modules/.bin/node-sass ./scss/notosans-fontface.scss --output-style expanded > ./tmp/scss/notosans-fontface.css
 	diff tests/outputs/scss/notosans-fontface.css tmp/scss/notosans-fontface.css
+
+	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern-allweight.scss --output-style expanded > ./tmp/scss/notosans-fontface-modern-allweight.css
+	diff tests/outputs/scss/notosans-fontface-modern-allweight.css tmp/scss/notosans-fontface-modern-allweight.css
+
+	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern.scss --output-style expanded > ./tmp/scss/notosans-fontface-modern.css
+	diff tests/outputs/scss/notosans-fontface-modern.css tmp/scss/notosans-fontface-modern.css

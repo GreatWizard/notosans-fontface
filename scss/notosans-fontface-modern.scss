@@ -1,0 +1,7 @@
+@import "mixins";
+
+@include notosans-fontface-modern("Regular", 400, normal);
+@include notosans-fontface-modern("Italic", 400, italic);
+
+@include notosans-fontface-modern("Bold", 700, normal);
+@include notosans-fontface-modern("BoldItalic", 700, italic);
