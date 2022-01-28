@@ -38,6 +38,8 @@ By example, for the `NotoSans Regular` font, required files are:
 - `NotoSans-Regular.ttf`
 - `NotoSans-Regular.svg`
 
+ℹ️ Modern packages references only `woff2` font files.
+
 ### Packages
 
 Packages are ready-to-use `css`, `less` and `scss` files.
@@ -85,6 +87,13 @@ The available files are:
 - `scss/notosans-fontface.scss` - essential package in SCSS
 - `less/notosans-fontface.less` - essential package in LESS
 
+There are also the modern variation that references only `woff2` font files:
+
+- `css/notosans-fontface-modern.css` - modern essential package compiled to CSS
+- `css/notosans-fontface-modern.min.css` - modern essential package minified to CSS
+- `scss/notosans-fontface-modern.scss` - modern essential package in SCSS
+- `less/notosans-fontface-modern.less` - modern essential package in LESS
+
 #### All-weight Package
 
 The "All weight" package contains all the normal Noto Sans fonts.
@@ -116,6 +125,12 @@ The available files are:
 - `css/notosans-fontface-allweight.min.css` - all-weight package minified to CSS
 - `scss/notosans-fontface-allweight.scss` - all-weight package in SCSS
 - `less/notosans-fontface-allweight.less` - all-weight package in LESS
+- There are also the modern variation that references only `woff2` font files:
+
+- `css/notosans-fontface-modern-allweight.css` - modern all-weight package compiled to CSS
+- `css/notosans-fontface-modern-allweight.min.css` - modern all-weight package minified to CSS
+- `scss/notosans-fontface-modern-allweight.scss` - modern all-weight package in SCSS
+- `less/notosans-fontface-modern-allweight.less` - modern all-weight package in LESS
 
 ### Custom
 
@@ -133,12 +148,19 @@ About the `notosans-fontface` mixin, you can redefine the `notosans-fontface-pat
 
 .notosans-fontface("Regular", 400, normal);
 .notosans-fontface("Italic", 400, italic);
-
 .notosans-fontface("Bold", 700, normal);
 .notosans-fontface("BoldItalic", 700, italic);
 
+// .notosans-fontface-modern("Regular", 400, normal);
+// .notosans-fontface-modern("Italic", 400, italic);
+// .notosans-fontface-modern("Bold", 700, normal);
+// .notosans-fontface-modern("BoldItalic", 700, italic);
+
 .fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Regular", 400, normal);
 .fontface("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Bold", 700, normal);
+
+// .fontface-modern("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Regular", 400, normal);
+// .fontface-modern("Noto Sans CJK JP", "fonts/JP/", "NotoSansCJKjp", "Bold", 700, normal);
 
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
@@ -154,9 +176,13 @@ $notosans-fontface-path: "fonts/Noto/";
 
 @include notosans-fontface("Regular", 400, normal);
 @include notosans-fontface("Italic", 400, italic);
-
 @include notosans-fontface("Bold", 700, normal);
 @include notosans-fontface("BoldItalic", 700, italic);
+
+// @include notosans-fontface-modern("Regular", 400, normal);
+// @include notosans-fontface-modern("Italic", 400, italic);
+// @include notosans-fontface-modern("Bold", 700, normal);
+// @include notosans-fontface-modern("BoldItalic", 700, italic);
 
 @include fontface(
   "Noto Sans CJK JP",
@@ -174,6 +200,23 @@ $notosans-fontface-path: "fonts/Noto/";
   700,
   normal
 );
+
+// @include fontface-modern(
+//   "Noto Sans CJK JP",
+//   "fonts/JP/",
+//   "NotoSansCJKjp",
+//   "Regular",
+//   400,
+//   normal
+// );
+// @include fontface-modern(
+//   "Noto Sans CJK JP",
+//   "fonts/JP/",
+//   "NotoSansCJKjp",
+//   "Bold",
+//   700,
+//   normal
+// );
 
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;

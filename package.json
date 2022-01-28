@@ -28,11 +28,11 @@
   ],
   "devDependencies": {
     "less": "^4.1.2",
-    "node-sass": "^6.0.1",
-    "parcel": "^2.0.1",
+    "node-sass": "^7.0.1",
+    "parcel": "^2.2.1",
     "ttf2eot": "^3.0.0",
     "ttf2svg": "^1.2.0",
     "ttf2woff": "^3.0.0",
-    "wawoff2": "^2.0.0"
+    "wawoff2": "^2.0.1"
   }
 }

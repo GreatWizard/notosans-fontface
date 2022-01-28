@@ -14,8 +14,22 @@
   }
 }
 
+.fontface-modern(@font-name, @fontface-path, @fontface-prefix, @type, @weight, @style) {
+  @font-face {
+    font-family: @font-name;
+    src: local('@{font-name} @{type}'),
+         local('@{fontface-prefix}-@{type}'),
+         url('@{fontface-path}/@{fontface-prefix}-@{type}.woff2') format('woff2');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
 @notosans-fontface-path: '../fonts';
 
 .notosans-fontface(@type, @weight, @style) {
   .fontface("Noto Sans", @notosans-fontface-path, "NotoSans", @type, @weight, @style)
+}
+.notosans-fontface-modern(@type, @weight, @style) {
+  .fontface-modern("Noto Sans", @notosans-fontface-path, "NotoSans", @type, @weight, @style)
 }
