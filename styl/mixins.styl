@@ -1,0 +1,28 @@
+fontface($font-name, $fontface-path, $fontface-prefix, $type, $weight, $style) {
+  @font-face {
+    font-family: $font-name;
+    src: url(s('%s/%s-%s.eot', unquote($fontface-path), unquote($fontface-prefix), unquote($type)));
+    src: local(s('%s %s', unquote($font-name), unquote($type))), local(s('%s-%s', unquote($fontface-prefix), unquote($type))), url(s('%s/%s-%s.eot?#iefix', unquote($fontface-path), unquote($fontface-prefix), unquote($type))) format('embedded-opentype'), url(s('%s/%s-%s.woff2', unquote($fontface-path), unquote($fontface-prefix), unquote($type))) format('woff2'), url(s('%s/%s-%s.woff', unquote($fontface-path), unquote($fontface-prefix), unquote($type))) format('woff'), url(s('%s/%s-%s.ttf', unquote($fontface-path), unquote($fontface-prefix), unquote($type))) format('truetype'), url(s('%s/%s-%s.svg#%s-%s', unquote($fontface-path), unquote($fontface-prefix), unquote($type), unquote($fontface-prefix), unquote($type))) format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+fontface-modern($font-name, $fontface-path, $fontface-prefix, $type, $weight, $style) {
+  @font-face {
+    font-family: $font-name;
+    src: local(s('%s %s', unquote($font-name), unquote($type))), local(s('%s-%s', unquote($fontface-prefix), unquote($type))), url(s('%s/%s-%s.woff2', unquote($fontface-path), unquote($fontface-prefix), unquote($type))) format('woff2');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+$notosans-fontface-path = '../fonts';
+
+notosans-fontface($type, $weight, $style) {
+  fontface('Noto Sans', $notosans-fontface-path, 'NotoSans', $type, $weight, $style);
+}
+
+notosans-fontface-modern($type, $weight, $style) {
+  fontface-modern('Noto Sans', $notosans-fontface-path, 'NotoSans', $type, $weight, $style);
+}
