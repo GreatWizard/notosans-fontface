@@ -134,10 +134,12 @@ The available files are:
 
 ### Custom
 
-It is possible to make your own set of Noto Sans fonts and your own fonts as well by using LESS or SCSS mixins provided in this project,
+It is possible to make your own set of Noto Sans fonts and your own fonts as well by using LESS, SCSS or Stylus mixins provided in this project,
 
-When you use the `fontface` mixin or `notosans-fontface` mixin, you need to provide all `.eot`, `.woff2`, `.woff`, `.ttf` and `.svg` in the configured directory.
-About the `notosans-fontface` mixin, you can redefine the `notosans-fontface-path` variable.
+When you use the `fontface` or `notosans-fontface` mixins, you need to provide all `.eot`, `.woff2`, `.woff`, `.ttf` and `.svg` files in the configured directory.
+If you use the modern variation `fontface-modern` or `notosans-fontface-modern` mixins, you only need to provide `.woff2` files in the configured directory.
+
+About the `notosans-fontface` or `notosans-fontface-modern` mixins, you can redefine the `notosans-fontface-path` variable.
 
 #### LESS Mixins
 
@@ -220,5 +222,61 @@ $notosans-fontface-path: "fonts/Noto/";
 
 body {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+}
+```
+
+#### Stylys Mixins
+
+```styl
+// my-website/style.styl
+$notosans-fontface-path = "fonts/Noto/"
+@import "notosans-fontface/styl/mixins"
+
+notosans-fontface("Regular", 400, normal)
+notosans-fontface("Italic", 400, italic)
+notosans-fontface("Bold", 700, normal)
+notosans-fontface("BoldItalic", 700, italic)
+
+// notosans-fontface-modern("Regular", 400, normal)
+// notosans-fontface-modern("Italic", 400, italic)
+// notosans-fontface-modern("Bold", 700, normal)
+// notosans-fontface-modern("BoldItalic", 700, italic)
+
+fontface(
+  "Noto Sans CJK JP",
+  "fonts/JP/",
+  "NotoSansCJKjp",
+  "Regular",
+  400,
+  normal
+)
+fontface(
+  "Noto Sans CJK JP",
+  "fonts/JP/",
+  "NotoSansCJKjp",
+  "Bold",
+  700,
+  normal
+)
+
+// fontface-modern(
+//   "Noto Sans CJK JP",
+//   "fonts/JP/",
+//   "NotoSansCJKjp",
+//   "Regular",
+//   400,
+//   normal
+// )
+// fontface-modern(
+//   "Noto Sans CJK JP",
+//   "fonts/JP/",
+//   "NotoSansCJKjp",
+//   "Bold",
+//   700,
+//   normal
+// )
+
+body {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif
 }
 ```

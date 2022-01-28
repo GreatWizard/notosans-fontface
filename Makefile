@@ -40,7 +40,7 @@ install:
 	yarn install --non-interactive --prefer-offline
 
 ## Run tests
-test: test-less test-scss
+test: test-less test-scss test-styl
 
 test-less:
 	mkdir -p tmp/less
@@ -71,3 +71,18 @@ test-scss:
 
 	./node_modules/.bin/node-sass ./scss/notosans-fontface-modern.scss --output-style expanded > ./tmp/scss/notosans-fontface-modern.css
 	diff tests/outputs/scss/notosans-fontface-modern.css tmp/scss/notosans-fontface-modern.css
+
+test-styl:
+	mkdir -p tmp/styl
+
+	./node_modules/.bin/stylus ./styl/notosans-fontface-allweight.styl -o ./tmp/styl/notosans-fontface-allweight.css
+	diff tests/outputs/styl/notosans-fontface-allweight.css tmp/styl/notosans-fontface-allweight.css
+
+	./node_modules/.bin/stylus ./styl/notosans-fontface.styl -o ./tmp/styl/notosans-fontface.css
+	diff tests/outputs/styl/notosans-fontface.css tmp/styl/notosans-fontface.css
+
+	./node_modules/.bin/stylus ./styl/notosans-fontface-modern-allweight.styl -o ./tmp/styl/notosans-fontface-modern-allweight.css
+	diff tests/outputs/styl/notosans-fontface-modern-allweight.css tmp/styl/notosans-fontface-modern-allweight.css
+
+	./node_modules/.bin/stylus ./styl/notosans-fontface-modern.styl -o ./tmp/styl/notosans-fontface-modern.css
+	diff tests/outputs/styl/notosans-fontface-modern.css tmp/styl/notosans-fontface-modern.css
