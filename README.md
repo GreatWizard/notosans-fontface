@@ -42,7 +42,7 @@ By example, for the `NotoSans Regular` font, required files are:
 
 ### Packages
 
-Packages are ready-to-use `css`, `less` and `scss` files.
+Packages are ready-to-use `css`, `less`, `scss` and `styl` files.
 
 For each package, you need to provides all `.eot`, `.woff2`, `.woff`, `.ttf` and `.svg` font files in the configured directory.
 

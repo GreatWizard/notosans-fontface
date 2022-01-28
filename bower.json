@@ -38,7 +38,13 @@
     "sans",
     "notosans",
     "font",
-    "fontface"
+    "fontface",
+    "css",
+    "less",
+    "sass",
+    "scss",
+    "stylus",
+    "styl"
   ],
   "ignore": [
     "**/.*",
